@@ -1,0 +1,23 @@
+{
+    "manifest_version":3,
+    "name":"Berryductive",
+    "description":"This is going to be the start of your life.",
+    "version":"0.1",
+    "icons": {
+        "16": "berry.png",
+        "48": "berry.png",
+        "128": "berry.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "berry.png",
+            "48": "berry.png",
+            "128": "berry.png"
+        }
+    },
+
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "css": ["main.css"]
+    }]
+}
